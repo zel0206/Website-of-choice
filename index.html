@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baticadogs Dog Donation Foundation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="min-h-screen bg-sand text-ink">
+    <header class="hero">
+        <nav class="container flex items-center justify-between py-6">
+            <div class="text-2xl font-bold tracking-wide">Baticadogs Foundation</div>
+            <div class="hidden md:flex gap-6 text-sm font-semibold">
+                <a href="#about" class="hover:underline">About</a>
+                <a href="#impact" class="hover:underline">Impact</a>
+                <a href="#donate" class="hover:underline">Donate</a>
+                <a href="#contact" class="hover:underline">Contact</a>
+            </div>
+        </nav>
+
+        <div class="container grid gap-10 md:grid-cols-2 items-center pb-16">
+            <div class="space-y-6">
+                <p class="badge">Dog Donation Foundation</p>
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+                    Helping stray dogs feel safe, fed, and loved.
+                </h1>
+                <p class="text-lg text-ink/80">
+                    Baticadogs is a local foundation focused on rescues, food drives, and quick medical care for dogs in need. Every small donation makes a big wag.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#donate" class="btn-primary">Donate now</a>
+                    <a href="#about" class="btn-outline">Learn more</a>
+                </div>
+                <div class="flex items-center gap-6 text-sm text-ink/70">
+                    <div>
+                        <p class="font-bold text-xl text-ink">1,200+</p>
+                        <p>Meals served</p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-xl text-ink">240</p>
+                        <p>Dogs rescued</p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-xl text-ink">85</p>
+                        <p>Families matched</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-frame">
+                    <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=900&q=80" alt="Happy dog waiting for adoption" class="w-full h-full object-cover" />
+                </div>
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold">This months donation</h2>
+                    <p class="text-ink/80">
+                        Emergency kits for 50 rescued dogs: warm blankets, flea treatment, and vet checks.
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%">70% funded</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container grid gap-10 md:grid-cols-2">
+                <div>
+                    <h2 class="section-title">About Baticadogs Foundation</h2>
+                    <p class="text-ink/80">
+                        We are a volunteer-led dog donation foundation under the name Baticadogs Foundation. We partner with local vets and shelters to provide medical attention, safe temporary homes, and adoption support. Everything we do is built around kindness and community.
+                    </p>
+                    <p class="mt-4 text-ink/80">
+                        Your donation supports meals, shelter repairs, and fast response rescue missions.
+                    </p>
+                </div>
+                <div class="grid gap-4">
+                    <div class="info-card">
+                        <h3 class="font-semibold">Rescue Hotline</h3>
+                        <p class="text-sm text-ink/70">24/7 response for urgent calls</p>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="font-semibold">Vet Partnerships</h3>
+                        <p class="text-sm text-ink/70">Trusted local clinics on standby</p>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="font-semibold">Adoption Support</h3>
+                        <p class="text-sm text-ink/70">Matching dogs with loving homes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="section alt">
+            <div class="container">
+                <div class="text-center max-w-2xl mx-auto space-y-4">
+                    <h2 class="section-title">Your impact</h2>
+                    <p class="text-ink/80">
+                        Every donation goes to a clear purpose. We post monthly receipts and keep our team volunteer-powered, so more help reaches the dogs.
+                    </p>
+                </div>
+                <div class="mt-10 grid gap-6 md:grid-cols-3">
+                    <div class="impact-card">
+                        <p class="text-3xl font-bold">$15</p>
+                        <p class="text-sm text-ink/70">Feeds one dog for a week</p>
+                    </div>
+                    <div class="impact-card">
+                        <p class="text-3xl font-bold">$45</p>
+                        <p class="text-sm text-ink/70">Covers vaccinations + checkup</p>
+                    </div>
+                    <div class="impact-card">
+                        <p class="text-3xl font-bold">$120</p>
+                        <p class="text-sm text-ink/70">Emergency shelter for 3 dogs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="donate" class="section">
+            <div class="container grid gap-10 md:grid-cols-2 items-center">
+                <div>
+                    <h2 class="section-title">Make a donation</h2>
+                    <p class="text-ink/80">
+                        Choose a quick amount or write a custom one. Every peso helps a wagging tail.
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <button class="chip">$10</button>
+                        <button class="chip">$25</button>
+                        <button class="chip">$50</button>
+                        <button class="chip">$100</button>
+                    </div>
+                </div>
+                <form class="donation-form">
+                    <label class="form-label">
+              Your name
+              <input type="text" placeholder="Your full name" class="form-input" />
+            </label>
+                    <label class="form-label">
+              Email address
+              <input type="email" placeholder="Name@gmail.com" class="form-input" />
+            </label>
+                    <label class="form-label">
+              Donation amount
+              <input type="number" placeholder="$50" class="form-input" />
+            </label>
+                    <button type="submit" class="btn-primary w-full">Give today</button>
+                    <p class="text-xs text-ink/60 text-center">
+
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container grid gap-6 md:grid-cols-3">
+            <div>
+                <h3 class="text-xl font-bold">Baticadogs Foundation</h3>
+                <p class="text-sm text-ink/70">
+                    For donations, rescues, and volunteer signup.
+                </p>
+            </div>
+            <div>
+                <p class="font-semibold">Contact</p>
+                <p class="text-sm text-ink/70">baticadogs@foundation.org</p>
+                <p class="text-sm text-ink/70">+639761242708</p>
+            </div>
+            <div>
+                <p class="font-semibold">Follow</p>
+                <div class="flex gap-3 text-sm text-ink/70">
+                    <span>Facebook</span>
+                    <span>Instagram</span>
+                    <span>Twitter</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
